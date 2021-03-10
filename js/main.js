@@ -47,11 +47,25 @@ var studenti = [
 aggiungere un nuovo oggetto studente inserendo
 nell’ordine: nome, cognome e età.*/
 
-var nuovoStudente = {
-    nome : prompt('inserisci il tuo nome'),
-    cognome : prompt('inserisci il cognome'),
-    età : prompt('inserisci l\'età'),
-};
+$('#aggiungi').click(function(){
 
-studenti.push(nuovoStudente);
-console.log(studenti);
+    var nuovoStudente = {
+        nome : prompt('inserisci il tuo nome'),
+        cognome : prompt('inserisci il cognome'),
+        età : prompt('inserisci l\'età'),
+    };
+
+    studenti.push(nuovoStudente);
+
+    //document.getElementById("lista_studenti").innerHTML += "<li>" + (nuovoStudente["nome"] + " " + nuovoStudente["cognome"]) + "</li>";
+    console.log(studenti);
+
+})
+
+$('#scopri').click(function(){
+    document.getElementById('lista_studenti').innerHTML += "<li>" (studenti['nome'])
+})
+
+    
+
+
